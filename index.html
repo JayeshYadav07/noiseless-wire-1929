@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+        font-weight: 100;
+      }
+      /* Alert Box */
+      #alert {
+        background-color: rgb(226, 14, 15);
+        color: rgb(255, 255, 255);
+        padding: 10px 20px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+      }
+      a {
+        color: white;
+      }
+      .alert-title {
+        width: 90%;
+      }
+      .alert-country {
+        margin-left: auto;
+      }
+      .alert-country img {
+        border-radius: 100%;
+        width: 16px;
+        height: 16px;
+      }
+
+      /* header section */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #bbb;
+        padding: 20px 0;
+        color: #2c2c2c;
+      }
+      header span {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      header span img {
+        width: 25px;
+      }
+      #header-logo {
+        width: 220px;
+        margin-right: 50px;
+      }
+      #header-search {
+        width: 50%;
+        padding: 13px;
+        font-size: 16px;
+      }
+      #header-cart {
+        display: flex;
+        align-items: center;
+        position: relative;
+      }
+      #header-cart img {
+        width: 30px;
+      }
+      #cart-count {
+        margin-top: 10px;
+        position: absolute;
+        left: 10px;
+        font-size: 14px;
+      }
+      section {
+        padding: 0 30px;
+      }
+      img {
+        width: 20px;
+      }
+      nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        padding-top: 8px;
+        line-height: 2.5rem;
+      }
+      #title {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0;
+        line-height: 2.2rem;
+      }
+      #left-img,
+      #right-img {
+        width: 30%;
+        height: 15px;
+      }
+
+      #banner-title {
+        font-weight: 700;
+        font-style: 29px;
+      }
+      #banner-disc {
+        font-size: 21px;
+      }
+      #banner {
+        position: relative;
+      }
+      #banner-content {
+        top: 20%;
+        left: 21%;
+        position: absolute;
+        width: 35%;
+        text-align: center;
+        line-height: 2rem;
+      }
+      .shop-now {
+        display: flex;
+        margin-bottom: 40px;
+      }
+
+      /* gift */
+      #gift {
+        color: rgb(70, 70, 70);
+      }
+      #gift h1,
+      .tranding h1 {
+        margin: 40px 0;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .gift-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+      }
+      .gift-grid h2 {
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+        line-height: 1.5rem;
+      }
+      .gift-grid img {
+        width: 100%;
+      }
+      .tranding img {
+        width: 100%;
+      }
+      .tranding h1 {
+        font-size: 20px;
+      }
+      .tranding-card {
+        position: relative;
+      }
+      .tranding-card div {
+        position: absolute;
+        top: 130px;
+        right: 80px;
+      }
+      .tranding-box > h1 {
+        text-align: left;
+        margin: 10px 0;
+      }
+      #category {
+        margin-bottom: 40px;
+      }
+      #category > h1 {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 40px;
+      }
+      .grid-category {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        text-align: center;
+        line-height: 2rem;
+      }
+      .grid-category img {
+        width: 100%;
+      }
+      .grid-category h3 {
+        font-weight: bold;
+      }
+      .enter-email {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+      }
+      .enter-email input {
+        margin: 0 5px;
+        padding: 10px;
+        width: 20%;
+      }
+      .enter-email button {
+        padding: 10px;
+        width: 20%;
+        color: white;
+        background-color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="alert">
+        <p class="alert-title">
+          <strong
+            >There's still time to shop! Find the best gifts, all in one
+            place.</strong
+          >
+          <a href="/index.html">Shop Gift</a>
+        </p>
+        <div class="alert-country">
+          <img src="https://n.nordstrommedia.com/alias/IN.gif" alt="img" />
+          <a href="/index.html">India</a>
+        </div>
+      </div>
+      <section>
+        <header>
+          <img id="header-logo" src="img/NordWave.png" alt="error" />
+          <input
+            type="text"
+            name=""
+            id="header-search"
+            placeholder="Search for products and brand "
+          />
+          <span id="header-sign-in">Sign In</span>
+          <span id="stores"> <img src="img/N.png" alt="error" /> Stores</span>
+          <span id="header-purchase">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/697/697722.png"
+              alt="error"
+            />
+            Purchase</span
+          >
+          <span id="header-cart">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/8204/8204059.png"
+              alt="error"
+            />
+            <div id="cart-count">0</div>
+          </span>
+        </header>
+        <nav>
+          <h6 style="font-size: 14px; font-weight: 100; line-height: 1.5rem">
+            <ul>
+              <li>Holiday Gift</li>
+              <li>Holiday Deal</li>
+              <li>Women</li>
+              <li>Men</li>
+              <li>Kids</li>
+              <li>Young Adult</li>
+              <li>Activewear</li>
+              <li>Home</li>
+              <li>Beauty</li>
+              <li>Designer</li>
+              <li>The Thread</li>
+            </ul>
+          </h6>
+        </nav>
+        <div id="title">
+          <img
+            id="left-img"
+            src="https://n.nordstrommedia.com/id/c30eb052-a9da-4529-95ed-0d1568cc55ad.png?h=22&w=536"
+            alt=""
+          />
+          <div style="text-align: center">
+            <h3 style="font-weight: bold">
+              Shop what you love—faster and easier.
+            </h3>
+            <span style="border-bottom: 1px solid #000">
+              Sign In or Create an Account
+            </span>
+          </div>
+          <img
+            id="right-img"
+            src="https://n.nordstrommedia.com/id/01471914-5c74-4e79-a258-af5f398b1a73.png?h=22&w=536"
+            alt=""
+          />
+        </div>
+        <div id="banner">
+          <img
+            style="width: 100%"
+            src="https://n.nordstrommedia.com/id/29e01f35-6ada-4cd1-9eba-9549432e17dd.jpeg?h=400&w=1608"
+            alt=""
+          />
+          <div id="banner-content">
+            <h2><strong id="banner-title">Last Minute Gift</strong></h2>
+            <p id="banner-disc">
+              Just what they wanted, just in time. Need it now? <br />
+              Buy online and pick up the same day in store.
+            </p>
+            <h5>
+              <ul>
+                <li>Stocking Stuffers</li>
+                <li>Last-Minute Gift</li>
+                <li>Gift Cards</li>
+              </ul>
+            </h5>
+          </div>
+        </div>
+        <div class="bonus" style="position: relative; line-height: 2rem">
+          <img
+            style="width: 100%; margin-top: 40px"
+            src="https://n.nordstrommedia.com/id/4f94f22c-fcbf-4b4d-967a-67a0a1bce95c.jpeg?h=200&w=1608"
+            alt=""
+          />
+          <div style="position: absolute; top: 100px; left: 400px">
+            <h2><strong>Get a $40 Bonus Note!</strong></h2>
+            <h4>
+              An exclusive offer for new Nordstrom credit cardmembers.
+              Restrictions apply.
+            </h4>
+            <span
+              style="text-align: left; border-bottom: 1px solid rgb(64, 64, 64)"
+            >
+              Apply Now
+            </span>
+          </div>
+        </div>
+        <div class="shop-now">
+          <div>
+            <img
+              style="width: 200px; margin-top: 40px"
+              src="https://n.nordstrommedia.com/id/88195f99-95d3-4590-8ada-1e363aff1c5b.png?h=363&w=235"
+              alt="error"
+            />
+            <br />
+            <span style="border-bottom: 1px solid #bbb; padding-top: 20px"
+              >Shop Now</span
+            >
+          </div>
+          <button
+            style="
+              background: #000;
+              color: #fff !important;
+              font-weight: 400;
+              font-size: 12px;
+              margin-top: 250px;
+              margin-left: 50px;
+              height: 40px;
+              padding: 5px 30px;
+            "
+          >
+            Shop All
+          </button>
+        </div>
+        <img
+          style="width: 100%"
+          src="https://n.nordstrommedia.com/id/5ec3d3de-9e8c-4317-bc28-3b42b503268e.png?h=17&w=1608"
+          alt="error"
+        />
+        <div id="gift">
+          <h1>GIFTS BY PRICE</h1>
+          <div class="gift-grid">
+            <div class="card">
+              <img src="img/img1.png" alt="error" />
+              <h2>Stocking Saffer</h2>
+            </div>
+            <div class="card">
+              <img src="img/img1.png" alt="error" />
+              <h2>Stocking Saffer</h2>
+            </div>
+            <div class="card">
+              <img src="img/img1.png" alt="error" />
+              <h2>Stocking Saffer</h2>
+            </div>
+            <div class="card">
+              <img src="img/img1.png" alt="error" />
+              <h2>Stocking Saffer</h2>
+            </div>
+            <div class="card">
+              <img src="img/img1.png" alt="error" />
+              <h2>Stocking Saffer</h2>
+            </div>
+          </div>
+        </div>
+        <div id="designer" style="position: relative">
+          <img
+            style="width: 100%; margin: 40px 0"
+            src="https://n.nordstrommedia.com/id/725ce447-3e13-40ec-90ac-102b56804ea5.png?h=200&w=1608"
+            alt="error"
+          />
+          <p
+            style="position: absolute; bottom: 70px; left: 550px; color: white"
+          >
+            Save on the best brands and styles.
+          </p>
+          <span
+            style="
+              position: absolute;
+              bottom: 70px;
+              left: 830px;
+              color: white;
+              border-bottom: 1px solid rgb(255, 255, 255);
+            "
+            >Designer Sale</span
+          >
+        </div>
+        <img
+          style="width: 100%"
+          src="https://n.nordstrommedia.com/id/5ec3d3de-9e8c-4317-bc28-3b42b503268e.png?h=17&w=1608"
+          alt="error"
+        />
+        <div class="tranding">
+          <h1>TRENDING NOW</h1>
+          <div class="tranding-card">
+            <img
+              src="https://n.nordstrommedia.com/id/46e5fdd4-68db-419a-8986-15d79dd9033d.jpeg?h=700&w=1608"
+              alt="error"
+            />
+            <div class="tranding-box">
+              <h1>Turn Up the Temp</h1>
+              <h4>Weatherproof your wardrobe with these cozy essentials.</h4>
+              <br />
+              <h5>
+                <span style="border-bottom: 1px solid rgb(39, 39, 39)"
+                  >Men's Cold Weather</span
+                >
+                <span style="border-bottom: 1px solid rgb(32, 32, 32)"
+                  >Women's Cold Weather</span
+                >
+              </h5>
+            </div>
+          </div>
+        </div>
+        <img
+          style="width: 100%; margin: 40px 0"
+          src="https://n.nordstrommedia.com/id/5ec3d3de-9e8c-4317-bc28-3b42b503268e.png?h=17&w=1608"
+          alt="error"
+        />
+        <div id="category">
+          <h1>SHOP BY CATEGORY</h1>
+          <div class="grid-category">
+            <div>
+              <img
+                src="https://n.nordstrommedia.com/id/8d5e2126-1fca-42f8-b71b-ce9d1a3cc0ab.jpeg?h=365&w=268"
+                alt="error"
+              />
+              <h3>Women</h3>
+            </div>
+            <div>
+              <img
+                src="https://n.nordstrommedia.com/id/fb45282f-b5e1-423b-9894-4a6071e7d3a1.jpeg?h=365&w=268"
+                alt="error"
+              />
+              <h3>Men</h3>
+            </div>
+            <div>
+              <img
+                src="https://n.nordstrommedia.com/id/278ded2f-d53f-4c14-a88c-8bc5ba1efe56.jpeg?h=365&w=268"
+                alt="error"
+              />
+              <h3>Kids</h3>
+            </div>
+            <div>
+              <img
+                src="https://n.nordstrommedia.com/id/1ceda26d-5052-4510-811b-82d30dbd5a23.jpeg?h=365&w=268"
+                alt="error"
+              />
+              <h3>Home</h3>
+            </div>
+            <div>
+              <img
+                src="https://n.nordstrommedia.com/id/a29eca50-eeb5-4d37-a2bf-2932c60746a3.jpeg?h=365&w=268"
+                alt="error"
+              />
+              <h3>Beauty & Fragrance</h3>
+            </div>
+            <div>
+              <img
+                src="https://n.nordstrommedia.com/id/48027591-850a-4544-814e-b458e00d6a51.jpeg?h=365&w=268"
+                alt="error"
+              />
+              <h3>Designer</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer style="padding: 0 20px">
+        <div class="enter-email">
+          <span>Get Email Updates:</span>
+          <input type="email" id="email" placeholder="Enter Email Address" />
+          <button>Sign Up</button>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
