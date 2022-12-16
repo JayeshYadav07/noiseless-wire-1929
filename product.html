@@ -5,6 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      #main-body {
+        display: flex;
+      }
+      #sider {
+        position: sticky;
+        top: 100px;
+        width: 40%;
+        padding: 30px 20px 0 0;
+      }
+      .sider-items {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        font-size: 16px;
+        align-items: center;
+      }
+      #product {
+        margin: 25px 0;
+      }
+      #gift-category {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: -20px;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid rgb(194, 194, 194);
+      }
+      #gift-category span {
+        color: #393939;
+      }
+      #cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 20px;
+      }
+      .card-item {
+        line-height: 2rem;
+        border: 1px solid rgb(239, 239, 239);
+        background-color: rgb(245, 245, 245);
+      }
+      .card-item img {
+        width: 100%;
+      }
+      .item-body {
+        padding: 10px;
+      }
+      .card-arrive {
+        font-size: 16px;
+        margin: 20px 0 0;
+        color: #75a842;
+      }
+      .card-title {
+        font-size: 16px;
+        margin: 8px 0 0;
+        color: #000000;
+        font-weight: bold;
+      }
+      .card-disc {
+        color: rgb(92, 92, 92);
+      }
+      .card-price {
+        font-size: 16px;
+        color: #000000;
+        font-weight: 700;
+      }
+      .card-review {
+        font-size: 16px;
+      }
+      .review-counter {
+        margin-left: 10px;
+        color: #969696;
+      }
+    </style>
   </head>
   <link rel="stylesheet" href="style.css" />
   <body>
@@ -738,7 +814,211 @@
             </ul>
           </h6>
         </nav>
+        <div id="main-body">
+          <div id="sider">
+            <hr />
+            <div class="sider-items">
+              <div>Gender</div>
+              <img
+                src="https://www.flaticon.com/svg/vstatic/svg/3917/3917179.svg?token=exp=1671208545~hmac=babd44db08c2b9ae3b864d7ee1ca5401"
+                alt=""
+              />
+            </div>
+            <hr />
+            <div class="sider-items">
+              <div>Size</div>
+              <img
+                src="https://www.flaticon.com/svg/vstatic/svg/3917/3917179.svg?token=exp=1671208545~hmac=babd44db08c2b9ae3b864d7ee1ca5401"
+                alt=""
+              />
+            </div>
+            <hr />
+            <div class="sider-items">
+              <div>Color</div>
+              <img
+                src="https://www.flaticon.com/svg/vstatic/svg/3917/3917179.svg?token=exp=1671208545~hmac=babd44db08c2b9ae3b864d7ee1ca5401"
+                alt=""
+              />
+            </div>
+            <hr />
+            <div class="sider-items">
+              <div>Brand</div>
+              <img
+                src="https://www.flaticon.com/svg/vstatic/svg/3917/3917179.svg?token=exp=1671208545~hmac=babd44db08c2b9ae3b864d7ee1ca5401"
+                alt=""
+              />
+            </div>
+            <hr />
+            <div class="sider-items">
+              <div>Feature</div>
+              <img
+                src="https://www.flaticon.com/svg/vstatic/svg/3917/3917179.svg?token=exp=1671208545~hmac=babd44db08c2b9ae3b864d7ee1ca5401"
+                alt=""
+              />
+            </div>
+            <hr />
+            <div class="sider-items">
+              <div>Matetail</div>
+              <img
+                src="https://www.flaticon.com/svg/vstatic/svg/3917/3917179.svg?token=exp=1671208545~hmac=babd44db08c2b9ae3b864d7ee1ca5401"
+                alt=""
+              />
+            </div>
+            <hr />
+            <div class="sider-items">
+              <div>Price</div>
+              <img
+                src="https://www.flaticon.com/svg/vstatic/svg/3917/3917179.svg?token=exp=1671208545~hmac=babd44db08c2b9ae3b864d7ee1ca5401"
+                alt=""
+              />
+            </div>
+            <hr />
+            <div class="sider-items">
+              <div>Sale</div>
+              <img
+                src="https://www.flaticon.com/svg/vstatic/svg/3917/3917179.svg?token=exp=1671208545~hmac=babd44db08c2b9ae3b864d7ee1ca5401"
+                alt=""
+              />
+            </div>
+            <hr />
+            <div class="sider-items">
+              <div>Style</div>
+              <img
+                src="https://www.flaticon.com/svg/vstatic/svg/3917/3917179.svg?token=exp=1671208545~hmac=babd44db08c2b9ae3b864d7ee1ca5401"
+                alt=""
+              />
+            </div>
+            <hr />
+          </div>
+          <div id="product">
+            <div class="product-banner">
+              <img
+                style="width: 100%"
+                src="https://n.nordstrommedia.com/id/b2dab3f1-3c20-4844-9451-55d7a6398c69.jpeg?h=417&w=1334"
+                alt="error"
+              />
+              <div id="gift-category">
+                <a href="#"> <span>Gift for Her</span></a>
+                <a href="#"> <span>Gift for Him</span></a>
+                <a href="#"> <span>Gift for Kids</span></a>
+                <a href="#"> <span>Gift for Teens</span></a>
+              </div>
+            </div>
+            <h3 id="product-title">All Holiday Gifts</h3>
+            <div id="cards"></div>
+          </div>
+        </div>
       </section>
+      <footer>
+        <div class="enter-email" style="padding: 0 20px">
+          <span>Get Email Updates:</span>
+          <input type="email" id="email" placeholder="Enter Email Address" />
+          <button>Sign Up</button>
+        </div>
+        <div>
+          <div id="footer-body">
+            <div id="footer-details">
+              <ul>
+                <h4>Customer Service</h4>
+                <li>Contact Us</li>
+                <li>Order Status</li>
+                <li>Shipping</li>
+                <li>Return Policy & Exchanges</li>
+                <li>Price Adjustments</li>
+                <li>Gift Cards</li>
+                <li>Gift Cards</li>
+                <li>Product Recalls</li>
+                <li>India</li>
+              </ul>
+              <ul>
+                <h4>About Us</h4>
+                <li>All Brands</li>
+                <li>Careers</li>
+                <li>Corporate Social Responsibility</li>
+                <li>Diversity, Inclusion & Belonging</li>
+                <li>Get Email Updates</li>
+                <li>Nordstrom Blog</li>
+                <li>The Thread</li>
+                <li>Nordy Podcast</li>
+              </ul>
+              <ul>
+                <h4>Stores & Services</h4>
+                <li>Find a Store</li>
+                <li>Free Style Help</li>
+                <li>Alterations & Tailoring</li>
+                <li>Pop-In Shop</li>
+                <li>Virtual Events</li>
+                <li>Spa Nordstrom</li>
+                <li>Nordstrom Restaurants</li>
+                <li>Nordstrom Local</li>
+              </ul>
+              <ul>
+                <h4>Nordstrom Card & Rewards</h4>
+                <li>The Nordy Club Rewards</li>
+                <li>Pay My Bill</li>
+                <li>Manage My Nordstrom Card</li>
+              </ul>
+              <ul>
+                <h4>Nordstrom, Inc.</h4>
+                <li>Nordstrom Rack</li>
+                <li>Nordstrom Canada</li>
+                <li>Investor Relations</li>
+                <li>Press Releases</li>
+                <li>Nordstrom Media Network</li>
+              </ul>
+            </div>
+            <div id="footer-links">
+              <div id="footer-apps">
+                <img
+                  style="width: 25px"
+                  src="https://cdn-icons-png.flaticon.com/128/854/854271.png"
+                  alt=""
+                />
+                <span>Get our app</span>
+                <a href="/product.html" id="top">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/128/3838/3838683.png"
+                    alt=""
+                  />
+                  <h4>Top</h4>
+                </a>
+              </div>
+              <div id="footer-social">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/6433/6433685.png"
+                  alt=""
+                />
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/665/665213.png"
+                  alt=""
+                />
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/665/665228.png"
+                  alt=""
+                />
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/665/665209.png"
+                  alt=""
+                />
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/3018/3018447.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div id="footer-policy">
+            <ul>
+              <li>Privacy</li>
+              <li>Do Not Sell My Personal Information</li>
+              <li>Terms & Conditions</li>
+              <li>Interest-Based Ads</li>
+              <li>©2022 Nordstrom, Inc.</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
+  <script src="/product.js"></script>
 </html>
