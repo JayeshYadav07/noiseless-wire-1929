@@ -5,8 +5,170 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <style>
+      .cartSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0;
+      }
+      .cartContainer {
+        width: 70%;
+        background-color: #ffffff;
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 0px 10px 20px #19191933;
+      }
+      .Header {
+        margin: auto;
+        width: 90%;
+        height: 15%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .Heading {
+        font-size: 20px;
+        font-family: "Open Sans";
+        font-weight: 700;
+        color: #2f3841;
+      }
+
+      .Action {
+        font-size: 14px;
+        font-family: "Open Sans";
+        font-weight: 600;
+        color: #e44c4c;
+        cursor: pointer;
+        border-bottom: 1px solid #e44c4c;
+      }
+      .Cart-Items {
+        margin: auto;
+        width: 90%;
+        height: 30%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .about {
+        height: 100%;
+        width: 24%;
+      }
+      .title {
+        padding-top: 10px;
+        line-height: 10px;
+        font-size: 32px;
+        font-family: "Open Sans";
+        font-weight: 800;
+        color: #202020;
+      }
+      .subtitle {
+        line-height: 30px;
+        font-size: 18px;
+        font-family: "Open Sans";
+        font-weight: 600;
+        color: #909090;
+        margin: 30px 0;
+      }
+
+      .counter {
+        width: 15%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .btn {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #d9d9d9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-family: "Open Sans";
+        font-weight: 900;
+        color: #202020;
+        cursor: pointer;
+      }
+      .count {
+        font-size: 20px;
+        font-family: "Open Sans";
+        font-weight: 600;
+        color: #202020;
+      }
+
+      .prices {
+        height: 100%;
+        text-align: right;
+        font-size: 16px;
+      }
+      .amount {
+        padding-top: 20px;
+        font-size: 26px;
+        font-family: "Open Sans";
+        font-weight: 800;
+        color: #202020;
+      }
+      .remove {
+        padding-top: 5px;
+        font-size: 14px;
+        font-family: "Open Sans";
+        font-weight: 600;
+        color: #e44c4c;
+        cursor: pointer;
+      }
+      hr {
+        width: 66%;
+        float: right;
+        margin-right: 5%;
+      }
+      .checkout {
+        float: right;
+        margin-right: 5%;
+        width: 28%;
+      }
+      .total {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .Subtotal {
+        font-size: 22px;
+        font-family: "Open Sans";
+        font-weight: 700;
+        color: #202020;
+      }
+      .items {
+        font-size: 16px;
+        font-family: "Open Sans";
+        font-weight: 500;
+        color: #909090;
+        line-height: 10px;
+      }
+      .total-amount {
+        font-size: 36px;
+        font-family: "Open Sans";
+        font-weight: 900;
+        color: #202020;
+      }
+      .button {
+        margin-top: 10px;
+        width: 100%;
+        height: 40px;
+        border: none;
+        background: linear-gradient(to bottom right, #b8d7ff, #8eb7eb);
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 16px;
+        font-family: "Open Sans";
+        font-weight: 600;
+        color: #202020;
+      }
+    </style>
   </head>
+  <link rel="stylesheet" href="style.css" />
   <body>
     <div class="container">
       <div id="alert">
@@ -738,231 +900,23 @@
             </ul>
           </h6>
         </nav>
-        <div id="title">
-          <img
-            id="left-img"
-            src="https://n.nordstrommedia.com/id/c30eb052-a9da-4529-95ed-0d1568cc55ad.png?h=22&w=536"
-            alt=""
-          />
-          <div style="text-align: center">
-            <h3 style="font-weight: bold">
-              Shop what you love—faster and easier.
-            </h3>
-            <span style="border-bottom: 1px solid #000">
-              Sign In or Create an Account
-            </span>
-          </div>
-          <img
-            id="right-img"
-            src="https://n.nordstrommedia.com/id/01471914-5c74-4e79-a258-af5f398b1a73.png?h=22&w=536"
-            alt=""
-          />
-        </div>
-        <div id="banner">
-          <img
-            style="width: 100%"
-            src="https://n.nordstrommedia.com/id/29e01f35-6ada-4cd1-9eba-9549432e17dd.jpeg?h=400&w=1608"
-            alt=""
-          />
-          <div id="banner-content">
-            <h2><strong id="banner-title">Last Minute Gift</strong></h2>
-            <p id="banner-disc">
-              Just what they wanted, just in time. Need it now? <br />
-              Buy online and pick up the same day in store.
-            </p>
-            <h5>
-              <ul>
-                <li>Stocking Stuffers</li>
-                <li>Last-Minute Gift</li>
-                <li>Gift Cards</li>
-              </ul>
-            </h5>
-          </div>
-        </div>
-        <div class="bonus" style="position: relative; line-height: 2rem">
-          <img
-            style="width: 100%; margin-top: 40px"
-            src="https://n.nordstrommedia.com/id/4f94f22c-fcbf-4b4d-967a-67a0a1bce95c.jpeg?h=200&w=1608"
-            alt=""
-          />
-          <div style="position: absolute; top: 100px; left: 400px">
-            <h2><strong>Get a $40 Bonus Note!</strong></h2>
-            <h4>
-              An exclusive offer for new Nordstrom credit cardmembers.
-              Restrictions apply.
-            </h4>
-            <span
-              style="text-align: left; border-bottom: 1px solid rgb(64, 64, 64)"
-            >
-              Apply Now
-            </span>
-          </div>
-        </div>
-        <div class="shop-now">
-          <div>
-            <a href="/product.html"
-              ><img
-                style="width: 200px; margin-top: 40px"
-                src="https://n.nordstrommedia.com/id/88195f99-95d3-4590-8ada-1e363aff1c5b.png?h=363&w=235"
-                alt="error"
-            /></a>
-            <br />
-            <a href="/product.html"
-              ><span
-                style="
-                  border-bottom: 1px solid #bbb;
-                  padding-top: 20px;
-                  color: #000;
-                "
-                >Shop Now</span
-              ></a
-            >
-          </div>
-          <button
-            style="
-              background: #000;
-              font-weight: 400;
-              font-size: 12px;
-              margin-top: 250px;
-              margin-left: 50px;
-              height: 40px;
-              padding: 5px 30px;
-              cursor: pointer;
-            "
-          >
-            <a href="/product.html" style="color: white; text-decoration: none"
-              >Shop All</a
-            >
-          </button>
-        </div>
-        <img
-          style="width: 100%"
-          src="https://n.nordstrommedia.com/id/5ec3d3de-9e8c-4317-bc28-3b42b503268e.png?h=17&w=1608"
-          alt="error"
-        />
-        <div id="gift">
-          <h1>GIFTS BY PRICE</h1>
-          <div class="gift-grid">
-            <div class="card">
-              <img src="img/img1.png" alt="error" />
-              <h2>Stocking Saffer</h2>
+        <div class="cartSection">
+          <div class="cartContainer">
+            <div class="Header">
+              <h3 class="Heading">Shopping Cart</h3>
+              <h5 class="Action">Remove all</h5>
             </div>
-            <div class="card">
-              <img src="img/img1.png" alt="error" />
-              <h2>Stocking Saffer</h2>
-            </div>
-            <div class="card">
-              <img src="img/img1.png" alt="error" />
-              <h2>Stocking Saffer</h2>
-            </div>
-            <div class="card">
-              <img src="img/img1.png" alt="error" />
-              <h2>Stocking Saffer</h2>
-            </div>
-            <div class="card">
-              <img src="img/img1.png" alt="error" />
-              <h2>Stocking Saffer</h2>
-            </div>
-          </div>
-        </div>
-        <div id="designer" style="position: relative">
-          <img
-            style="width: 100%; margin: 40px 0"
-            src="https://n.nordstrommedia.com/id/725ce447-3e13-40ec-90ac-102b56804ea5.png?h=200&w=1608"
-            alt="error"
-          />
-          <p
-            style="position: absolute; bottom: 70px; left: 550px; color: white"
-          >
-            Save on the best brands and styles.
-          </p>
-          <span
-            style="
-              position: absolute;
-              bottom: 70px;
-              left: 830px;
-              color: white;
-              border-bottom: 1px solid rgb(255, 255, 255);
-            "
-            >Designer Sale</span
-          >
-        </div>
-        <img
-          style="width: 100%"
-          src="https://n.nordstrommedia.com/id/5ec3d3de-9e8c-4317-bc28-3b42b503268e.png?h=17&w=1608"
-          alt="error"
-        />
-        <div class="tranding">
-          <h1>TRENDING NOW</h1>
-          <div class="tranding-card">
-            <img
-              src="https://n.nordstrommedia.com/id/46e5fdd4-68db-419a-8986-15d79dd9033d.jpeg?h=700&w=1608"
-              alt="error"
-            />
-            <div class="tranding-box">
-              <h1>Turn Up the Temp</h1>
-              <h4>Weatherproof your wardrobe with these cozy essentials.</h4>
-              <br />
-              <h5>
-                <span style="border-bottom: 1px solid rgb(39, 39, 39)"
-                  >Men's Cold Weather</span
-                >
-                <span style="border-bottom: 1px solid rgb(32, 32, 32)"
-                  >Women's Cold Weather</span
-                >
-              </h5>
-            </div>
-          </div>
-        </div>
-        <img
-          style="width: 100%; margin: 40px 0"
-          src="https://n.nordstrommedia.com/id/5ec3d3de-9e8c-4317-bc28-3b42b503268e.png?h=17&w=1608"
-          alt="error"
-        />
-        <div id="category">
-          <h1>SHOP BY CATEGORY</h1>
-          <div class="grid-category">
-            <div>
-              <img
-                src="https://n.nordstrommedia.com/id/8d5e2126-1fca-42f8-b71b-ce9d1a3cc0ab.jpeg?h=365&w=268"
-                alt="error"
-              />
-              <h3>Women</h3>
-            </div>
-            <div>
-              <img
-                src="https://n.nordstrommedia.com/id/fb45282f-b5e1-423b-9894-4a6071e7d3a1.jpeg?h=365&w=268"
-                alt="error"
-              />
-              <h3>Men</h3>
-            </div>
-            <div>
-              <img
-                src="https://n.nordstrommedia.com/id/278ded2f-d53f-4c14-a88c-8bc5ba1efe56.jpeg?h=365&w=268"
-                alt="error"
-              />
-              <h3>Kids</h3>
-            </div>
-            <div>
-              <img
-                src="https://n.nordstrommedia.com/id/1ceda26d-5052-4510-811b-82d30dbd5a23.jpeg?h=365&w=268"
-                alt="error"
-              />
-              <h3>Home</h3>
-            </div>
-            <div>
-              <img
-                src="https://n.nordstrommedia.com/id/a29eca50-eeb5-4d37-a2bf-2932c60746a3.jpeg?h=365&w=268"
-                alt="error"
-              />
-              <h3>Beauty & Fragrance</h3>
-            </div>
-            <div>
-              <img
-                src="https://n.nordstrommedia.com/id/48027591-850a-4544-814e-b458e00d6a51.jpeg?h=365&w=268"
-                alt="error"
-              />
-              <h3>Designer</h3>
+            <div id="cartCards"></div>
+            <hr />
+            <div class="checkout">
+              <div class="total">
+                <div>
+                  <div class="Subtotal">Sub-Total</div>
+                  <div id="items"></div>
+                </div>
+                <div id="total-amount"></div>
+              </div>
+              <button class="button">Checkout</button>
             </div>
           </div>
         </div>
@@ -1033,7 +987,7 @@
                   alt=""
                 />
                 <span>Get our app</span>
-                <a href="/index.html" id="top">
+                <a href="/product.html" id="top">
                   <img
                     src="https://cdn-icons-png.flaticon.com/128/3838/3838683.png"
                     alt=""
@@ -1078,5 +1032,44 @@
       </footer>
     </div>
   </body>
-  <script src="script.js"></script>
+  <script>
+    let cart = JSON.parse(localStorage.getItem("cart"));
+    if (cart == null) cart = [];
+    let countCart = document.getElementById("cart-count");
+    countCart.innerText = cart.length;
+    let sum = 0;
+    let cartCards = document.getElementById("cartCards");
+    cart.forEach((element) => {
+      let div = document.createElement("div");
+      div.setAttribute("class", "Cart-Items");
+      div.innerHTML = `
+        <div class="image-box">
+          <img
+            src="${element.img}"
+            alt="error"
+            style="width: 150px"
+          />
+        </div>
+        <div class="about">
+          <h1 class="title">${element.title}</h1>
+          <h3 class="subtitle">${element.disc}</h3>
+        </div>
+        <div class="counter">
+          <div class="btn">+</div>
+          <div class="count">${element.quantity}</div>
+          <div class="btn">-</div>
+        </div>
+        <div class="prices">
+          <div class="amount">${element.price}</div>
+          <div class="remove"><u>Remove</u></div>
+        </div>
+      `;
+      sum += Math.round(Number(element.price));
+      cartCards.append(div);
+    });
+    let items = document.getElementById("items");
+    let total_amount = document.getElementById("total-amount");
+    items.innerText = cart.length;
+    total_amount.innerText = sum;
+  </script>
 </html>
