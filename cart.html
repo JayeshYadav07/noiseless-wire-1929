@@ -169,6 +169,10 @@
     </style>
   </head>
   <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
   <body>
     <div class="container">
       <div id="alert">
@@ -1055,21 +1059,37 @@
           <h3 class="subtitle">${element.disc}</h3>
         </div>
         <div class="counter">
-          <div class="btn">+</div>
-          <div class="count">${element.quantity}</div>
+          <div class="btn plus">+</div>
+          <div class="count minuse" >${element.quantity}</div>
           <div class="btn">-</div>
         </div>
         <div class="prices">
-          <div class="amount">${element.price}</div>
+          <div class="amount"><i class="fa fa-rupee"></i>${element.price}</div>
           <div class="remove"><u>Remove</u></div>
         </div>
       `;
-      sum += Math.round(Number(element.price));
+      sum += Number(element.price);
       cartCards.append(div);
     });
     let items = document.getElementById("items");
     let total_amount = document.getElementById("total-amount");
     items.innerText = cart.length;
-    total_amount.innerText = sum;
+    total_amount.innerHTML = `<i class="fa fa-rupee"></i>${sum}`;
+    let action = document.getElementsByClassName("Action")[0];
+    action.addEventListener("click", () => {
+      localStorage.setItem("cart", JSON.stringify([]));
+    });
+    let plus = document.getElementsByClassName("plus");
+    let minuse = document.getElementsByClassName("minuse");
+    for (let i = 0; i < plus.length; i++) {
+      const element = plus[i];
+      element.addEventListener("click", (e) => {
+        console.log(e.target);
+      });
+    }
+    for (let i = 0; i < minuse.length; i++) {
+      const element = plus[i];
+      element.addEventListener("click", () => {});
+    }
   </script>
 </html>
