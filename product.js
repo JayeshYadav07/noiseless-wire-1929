@@ -212,7 +212,7 @@ let data = [
     id: 20,
     title: "SKIMS",
     disc: "Boyfriend Long Sleeve T-Shirt (Regular & Plus Size)",
-    category: "cloths",
+    category: "other",
     gender: "men",
     price: 6590.84,
     review: "(38)",
