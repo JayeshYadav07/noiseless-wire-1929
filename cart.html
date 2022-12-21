@@ -1137,6 +1137,7 @@
       let action = document.getElementsByClassName("Action")[0];
       action.addEventListener("click", () => {
         localStorage.setItem("cart", JSON.stringify([]));
+        display();
       });
     }
     let button = document.getElementsByClassName("button")[0];
